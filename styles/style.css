@@ -132,9 +132,10 @@ footer h2{
     object-fit: cover;
 }
 .icons span{
-    margin: 0px 5px;
-    
+    margin: 0px 15px;
+    cursor: pointer; 
 }
+
 .icons span svg{
     color: hsl(167, 40%, 24%);
 }
@@ -150,7 +151,11 @@ footer h2{
     margin-block: 10px;
     border-radius: 20px;
 }
-@media only screen and (max-width: 800px) {
+input[type=checkbox]:checked ~ .list{
+    display: block;
+    background: #000;
+  }
+@media (max-width: 800px) {
     .responsive{
         display: block;
     }
@@ -160,5 +165,14 @@ footer h2{
     .header .title{
         font-size: 35px;
         text-align: center;
+    }
+   
+    .sm{
+        padding: 5rem 0;
+    }
+    .hidden img{
+        height: 60vh;
+        width: 48vh;
+        object-fit: contain;
     }
 }
